@@ -5,6 +5,7 @@
     user-select: none;
     scroll-behavior: smooth;
 }
+
 :root {
     --primary-color: #5a6e79;
     --secondary-color: black;
@@ -22,12 +23,7 @@
 .iconcolor {
     color: white;
 }
-/* header{
-    position: sticky;
-    top: 0px;
-    z-index: 10000;
-    background-color: white;
-} */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -35,9 +31,11 @@
     width: 100%;
     align-items: center;
 }
-.responsive_menu{
+
+.responsive_menu {
     display: none;
 }
+
 .marginLeft {
     margin-left: 135px;
 }
@@ -270,7 +268,8 @@
     margin: auto;
 }
 
-.numberdetail h6, .numberdetail p{
+.numberdetail h6,
+.numberdetail p {
     color: var(--primary-color);
 }
 
@@ -280,7 +279,7 @@
     align-items: center;
 }
 
-#aboutdetail1 h2{
+#aboutdetail1 h2 {
     max-width: 360px;
     font-size: 5vb;
 }
@@ -349,10 +348,11 @@
     top: 25px;
 
 }
-#aboutdetail4 img{
+
+#aboutdetail4 img {
     height: 58px;
     width: 90px;
-    
+
 
 }
 
@@ -623,7 +623,7 @@
 
 }
 
-footer{
+footer {
     background-color: var(--primary-color);
 }
 
@@ -705,7 +705,7 @@ footer{
         margin-left: 100px;
     }
 
-    #bannertext h1{
+    #bannertext h1 {
         font-size: 1.5em;
     }
 
@@ -725,7 +725,7 @@ footer{
         height: 80%;
     }
 
-    .responsive_menu{
+    .responsive_menu {
         display: none;
     }
 
@@ -745,6 +745,7 @@ footer{
     #footer1 {
         height: 70%;
     }
+
     .featureheading h2 {
         max-width: 73%;
         font-size: 2em;
@@ -900,6 +901,7 @@ footer{
         flex-direction: column;
         gap: 20px;
     }
+
     .content {
         width: 100%;
         height: 33.3%;
@@ -989,7 +991,7 @@ footer{
         height: 400px;
     }
 
-    .responsive_menu{
+    .responsive_menu {
         display: none;
     }
 
@@ -1166,7 +1168,6 @@ footer{
 @media (min-width:700px) and (max-width:900px) {
     .marginLeft {
         margin-left: 0px;
-        /* margin-top: 40px; */
     }
 
     #footer2 {
@@ -1175,12 +1176,12 @@ footer{
     }
 
 
-    .nav{
+    .nav {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .responsive_menu{
+    .responsive_menu {
         display: none;
     }
 
@@ -1192,7 +1193,7 @@ footer{
         font-size: 2em;
     }
 
-     #footer1 {
+    #footer1 {
         height: 70%;
     }
 
@@ -1257,7 +1258,6 @@ footer{
 
     .h1heading {
         max-width: 77%;
-        /* padding-top: 40px; */
         font-size: 2em;
     }
 
@@ -1405,20 +1405,20 @@ footer{
         margin: 0%;
     }
 
-    #navoptions{
+    #navoptions {
         display: none;
     }
-    .search_image{
+
+    .search_image {
         display: none;
     }
-    .menu_image{
+
+    .menu_image {
         display: none;
     }
 
 
-    .nav {
-        
-    }
+    .nav {}
 
     .subscribebtn {
         width: 250px;
@@ -1575,12 +1575,15 @@ footer{
     #aboutdetail1 {
         height: 25%;
     }
+
     #aboutdetail2 {
         height: 25%;
     }
+
     #aboutdetail2 {
         height: 25%;
     }
+
     #aboutdetail2 {
         height: 25%;
     }
@@ -1621,11 +1624,11 @@ footer{
         margin-bottom: 20px;
     }
 
-    .featureheading{
+    .featureheading {
         height: 20%;
     }
 
-    .featurecontent{
+    .featurecontent {
         height: 80%;
     }
 
@@ -1718,6 +1721,7 @@ footer{
         font-size: .8em;
         padding: 20px;
     }
+
     #footer1 h2 {
         font-size: 1.5em;
         padding: 15px;
@@ -1744,7 +1748,7 @@ footer{
     }
 
     .roundnumber p {
-        
+
         height: 40px;
         width: 40px;
         margin-top: 5px;
@@ -1771,105 +1775,103 @@ footer{
     #footerdetail5 {
         margin-top: 10px;
         height: 150px;
-        text-align: center;    
+        text-align: center;
     }
 
-    #footer2{
+    #footer2 {
         justify-content: flex-start;
         gap: 10px;
         height: 900px;
     }
 
-    
-        
-.responsive_menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.menu_icon {
-    display: block;
-    background-color: #f1f1f1;
-    color: #333;
-    padding: 10px;
-    cursor: pointer;
-}
 
-.menu_icon i {
-    font-size: 20px;
-}
+    .responsive_menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-.dropdown_items {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    top: 80px;
-    padding: 10px;
-}
-
-.dropdown_items ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown_items li {
-    padding: 5px 0;
-}
-
-.close_icon {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    cursor: pointer;
-}
-
-.menu_checkbox:checked ~ .dropdown_items {
-    display: block;
-}
-
-.close_checkbox:checked ~ .dropdown_items {
-    display: none;
-}
-
-/* @media (min-width: 768px) {
     .menu_icon {
-    display: block;
-    }
-} */
-.menu_checkbox, .close_checkbox{
-    visibility: hidden;
-}
-.close_icon{
-    visibility: hidden;
-}
-
-
-
-}
-
-
-@media (min-width:1500px){
-    .section1{
-        max-height: 900px;
-    }
-    #bannertext{
-        height: 40%;
+        display: block;
+        background-color: #f1f1f1;
+        color: #333;
+        padding: 10px;
+        cursor: pointer;
     }
 
-    .responsive_menu{
+    .menu_icon i {
+        font-size: 20px;
+    }
+
+    .dropdown_items {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        top: 80px;
+        padding: 10px;
+    }
+
+    .dropdown_items ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown_items li {
+        padding: 5px 0;
+    }
+
+    .close_icon {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .menu_checkbox:checked~.dropdown_items {
+        display: block;
+    }
+
+    .close_checkbox:checked~.dropdown_items {
         display: none;
     }
 
-    .section2{
-        max-height:400px ;
+    .menu_checkbox,
+    .close_checkbox {
+        visibility: hidden;
     }
 
-    .insideheading h3{
+    .close_icon {
+        visibility: hidden;
+    }
+
+
+
+}
+
+
+@media (min-width:1500px) {
+    .section1 {
+        max-height: 900px;
+    }
+
+    #bannertext {
+        height: 40%;
+    }
+
+    .responsive_menu {
+        display: none;
+    }
+
+    .section2 {
+        max-height: 400px;
+    }
+
+    .insideheading h3 {
         font-size: 2em;
     }
 
@@ -1878,70 +1880,80 @@ footer{
         line-height: 30px;
     }
 
-    .section3{
+    .section3 {
         max-height: 800px;
     }
-    #aboutdetail1 h2{
+
+    #aboutdetail1 h2 {
         font-size: 3em;
     }
-    #aboutdetail2 p{
+
+    #aboutdetail2 p {
         font-size: 2em;
     }
-    #aboutdetail3{
+
+    #aboutdetail3 {
         height: 25%;
         max-height: 200px;
     }
 
-    #about2{
+    #about2 {
         height: 90%;
         justify-content: center;
     }
 
-    .section4{
+    .section4 {
         max-height: 900px;
     }
+
     .featureheading h2 {
         font-size: 3em;
     }
+
     .roundnumber p {
         font-size: 1.5em;
     }
+
     .insidecontentbody h3 {
         font-size: 2em;
     }
-    .insidecontentbody p{
+
+    .insidecontentbody p {
         font-size: 1.5em;
     }
-    .section5{
+
+    .section5 {
         max-height: 900px;
     }
+
     #reviewheading h2 {
         font-size: 3em;
         max-width: 100%;
     }
-    .reviewinsidecontent{
-       max-height: 550px;  
-    }
-    .reviewinsidecontent h3 {
-        font-size: 2em;
-    }
-    .reviewinsidecontent p{
-        font-size: 1.5em;
-    }
-    .username h4 {
-        font-size: 1.2em;
-    }
-    .username p {
-        font-size: .8em;
-    }
-    .section6{
+
+    .reviewinsidecontent {
         max-height: 550px;
     }
 
-    
+    .reviewinsidecontent h3 {
+        font-size: 2em;
+    }
+
+    .reviewinsidecontent p {
+        font-size: 1.5em;
+    }
+
+    .username h4 {
+        font-size: 1.2em;
+    }
+
+    .username p {
+        font-size: .8em;
+    }
+
+    .section6 {
+        max-height: 550px;
+    }
+
+
 }
-
-
-
-
-  

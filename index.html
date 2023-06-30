@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Sreerag">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav class="nav container">
@@ -17,20 +19,36 @@
             </div>
             <div class="navdiv" id="navoptions">
                 <ul class="navdivul">
-                    <li class="navdivli"><a href="#">Home</a></li>
-                    <li class="navdivli"><a href="#">About</a></li>
-                    <li class="navdivli"><a href="#">Feature</a></li>
-                    <li class="navdivli"><a href="#">Contacts</a></li>
+                    <li class="navdivli"><a href="#home">Home</a></li>
+                    <li class="navdivli"><a href="#about">About</a></li>
+                    <li class="navdivli"><a href="#feature">Feature</a></li>
+                    <li class="navdivli"><a href="#contact">Contacts</a></li>
                 </ul>
             </div>
+           
             <div class="navdiv marginRight" id="navicons">
-                <a href="#" title="search icons"><img src="images/search-interface-symbol.png" alt="search icon"></a>
-                <a href="#" title="menu icons"><img src="images/menu.png" alt="menu icon"></a>
+                <a href="#" class="search_image" title="search icons"><img src="images/search-interface-symbol.png" alt="search icon"></a>
+                <a href="#" class="menu_image" title="menu icons"><img src="images/menu.png" alt="menu icon"></a>
+                <div class="responsive_menu">
+                    <input type="checkbox" id="menu_checkbox" class="menu_checkbox">
+                    <label for="menu_checkbox" class="menu_icon"><i class="fas fa-bars"></i></label>
+                    <div class="dropdown_items">
+                      <input type="checkbox" id="close_checkbox" class="close_checkbox">
+                      <label for="close_checkbox" class="close_icon">&times;</label>
+                      <ul>
+                        <li class="navdivli"><a href="#home">Home</a></li>
+                        <li class="navdivli"><a href="#about">About</a></li>
+                        <li class="navdivli"><a href="#feature">Feature</a></li>
+                        <li class="navdivli"><a href="#contact">Contacts</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="section1 container">
+        <section class="section1 container" id="home">
             <div class="bannerdiv" id="bannertext">
                 <h1>We help you make modern interior</h1>
                 <p>We will help you to make on elegant and beautiful interior designed by professional interior designer
@@ -56,7 +74,7 @@
                 <div class="headingline marginLeft"></div>
                 <h2 class="h1heading">benefits you get when using our services</h2>
             </div>
-            <div class="info marginLeft marginRight">
+            <div class="marginLeft info marginRight">
                 <div class="infodetail" id="infodetail1">
                     <div class="headingicon">
                         <img class="staricon" src="images/star.png" alt="star">
@@ -72,7 +90,7 @@
                 </div>
                 <div class="infodetail" id="infodetail2">
                     <div class="headingicon truckicon">
-                        <img  src="images/truck.png" alt="truck">
+                        <img src="images/truck.png" alt="truck">
                     </div>
                     <div class="headingtext">
                         <div class="insideheading">
@@ -98,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <section class="section3 container">
+        <section class="section3 container" id="about">
             <div class="about" id="about1">
                 <img class="marginLeft" src="images/wall.jpg" alt="Wall image">
             </div>
@@ -108,7 +126,8 @@
                 </div>
                 <div class="about2detail marginRight" id="aboutdetail2">
                     <p>You dont worry avout result because all of these interors are made by people who are
-                        professionals in their fiels with an elegant and luxurious style and with premium quality materials. </p>
+                        professionals in their fiels with an elegant and luxurious style and with premium quality
+                        materials. </p>
                 </div>
                 <div class="about2detail marginRight" id="aboutdetail3">
                     <div class="numberdetail" id="numberdetail1">
@@ -126,11 +145,11 @@
                 </div>
                 <div class="about2detail marginRight" id="aboutdetail4">
                     <a href="#">Learn more</a>
-                    <i class="fa-solid fa-arrow-right btnarrow"></i>
+                    <img class="btnarrow" src="images/right-arrow (1).png" alt="right arrow">
                 </div>
             </div>
         </section>
-        <section class="section4 container">
+        <section class="section4 container" id="feature">
             <div class="feature marginLeft" id="feature1">
                 <div class="featureheading">
                     <h2>We provide the best process experience </h2>
@@ -145,7 +164,8 @@
                         </div>
                         <div class="insidecontentbody">
                             <h3>Briefing</h3>
-                            <p>First thing you determine the concept and model you want, then choose what color and materials you want to use in your furniture.</p>
+                            <p>First thing you determine the concept and model you want, then choose what color and
+                                materials you want to use in your furniture.</p>
                         </div>
                     </div>
                     <div class="content" id="content2">
@@ -157,7 +177,8 @@
                         </div>
                         <div class="insidecontentbody">
                             <h3>Processing</h3>
-                            <p>When the breiefing process is completed and what the client wants has been achieved. Then we carry out the execution of the delivery concept.</p>
+                            <p>When the breiefing process is completed and what the client wants has been achieved. Then
+                                we carry out the execution of the delivery concept.</p>
                         </div>
                     </div>
                     <div class="content" id="content3">
@@ -168,13 +189,12 @@
                         </div>
                         <div class="insidecontentbody">
                             <h3>Finishing</h3>
-                            <p>After the process is completed, we will immediately carry out the finishing stage and we do it carefully and make sure there are no mistake.</p>
+                            <p>After the process is completed, we will immediately carry out the finishing stage and we
+                                do it carefully and make sure there are no mistake.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="feature marginRight" id="feature2">
                 <img src="images/hall.jpg" alt="hall">
             </div>
@@ -186,15 +206,16 @@
                     <h2 class="marginLeft">We our customers are saying</h2>
                 </div>
                 <div class="reviewsubheadingarrow marginRight">
-                    <i class="fa-solid fa-arrow-left iconcolorprimary" ></i>
+                    <i class="fa-solid fa-arrow-left iconcolorprimary"></i>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
             <div class="review container" id="reviewcontent">
                 <div class="reviewinsidecontent marginLeft" id="reviewinsidecontent1">
-                    <i class="fa-solid fa-quote-left iconcolor iconcolor" ></i>
+                    <i class="fa-solid fa-quote-left iconcolor iconcolor"></i>
                     <h3>The result given are very satisfying</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum possimus ut soluta, exercitationem, obcaecati fugiat error nisi molestias magni aut vita</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum possimus ut soluta,
+                        exercitationem, obcaecati fugiat error nisi molestias magni aut vita</p>
                     <div class="userid">
                         <img src="images/sreerag.jpg" alt="userimage">
                         <div class="username">
@@ -204,9 +225,10 @@
                     </div>
                 </div>
                 <div class="reviewinsidecontent marginRight" id="reviewinsidecontent2">
-                    <i class="fa-solid fa-quote-left iconcolor" ></i>
+                    <i class="fa-solid fa-quote-left iconcolor"></i>
                     <h3>The service provided is very good and friendly</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum possimus ut soluta, exercitationem, obcaecati fugiat error nisi molestias magni aut vita</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum possimus ut soluta,
+                        exercitationem, obcaecati fugiat error nisi molestias magni aut vita</p>
                     <div class="userid">
                         <img src="images/sreerag.jpg" alt="userimage">
                         <div class="username">
@@ -218,56 +240,59 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section class="section6 container">
-            <div class="footer" id="footer1">
+        <section class="section6 " id="contact">
+            <div class="footer container" id="footer1">
                 <h2>Subscribe to get the latest news about us</h2>
-                <p>We recommwnt you to subscribe to our newspaper, enter your email below to get our daily update about us.</p>
+                <p>We recommwnt you to subscribe to our newspaper, enter your email below to get our daily update about
+                    us.</p>
                 <div class="subscribebtn">
                     <input type="email" placeholder="Enter your email">
                     <a href="#">Subscribe</a>
                 </div>
             </div>
-            <div class="footer" id="footer2">
-                <div class="footerdetail marginLeft" id="footerdetail1">
-                    <h4>Luxterior</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsum accusantium ipsam neque commodi </p>
-                </div>
-                <div class="footerdetail" id="footerdetail2">
-                    <h5>About</h5>
-                    <a href="#">About us</a>
-                    <a href="#">Feature</a>
-                    <a href="#">News</a>
-                    <a href="#">Courses</a>
-                </div>
-                <div class="footerdetail" id="footerdetail3">
-                    <h5>Company</h5>
-                    <a href="#">Our comoany</a>
-                    <a href="#">Partner with us</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Slug</a>
-                </div>
-                <div class="footerdetail" id="footerdetail4">
-                    <h5>Support</h5>
-                    <a href="#">asdfgh</a>
-                    <a href="#">Feature</a>
-                    <a href="#">News</a>
-                    <a href="#">Courses</a>
-                    <a href="#">Accecibility</a>
-                </div>
-                <div class="footerdetail marginRight" id="footerdetail5">
-                    <h5>Get in touch</h5>
-                    <a href="#">About us</a>
-                    <a href="#">Feature</a>
-                    <div class="socialicons">
-                        <i class="fa-brands fa-instagram iconcolor" ></i>
-                        <i class="fa-brands fa-facebook-f iconcolor" ></i>
-                        <i class="fa-brands fa-twitter iconcolor"></i>
+            <footer class="" >
+                <div class="footer container" id="footer2">
+                    <div class="footerdetail marginLeft" id="footerdetail1">
+                        <h4>Luxterior</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsum accusantium ipsam neque
+                            commodi </p>
+                    </div>
+                    <div class="footerdetail" id="footerdetail2">
+                        <h5>About</h5>
+                        <a href="#">About us</a>
+                        <a href="#">Feature</a>
+                        <a href="#">News</a>
+                        <a href="#">Courses</a>
+                    </div>
+                    <div class="footerdetail" id="footerdetail3">
+                        <h5>Company</h5>
+                        <a href="#">Our comoany</a>
+                        <a href="#">Partner with us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Slug</a>
+                    </div>
+                    <div class="footerdetail" id="footerdetail4">
+                        <h5>Support</h5>
+                        <a href="#">asdfgh</a>
+                        <a href="#">Feature</a>
+                        <a href="#">News</a>
+                        <a href="#">Courses</a>
+                        <a href="#">Accecibility</a>
+                    </div>
+                    <div class="footerdetail marginRight" id="footerdetail5">
+                        <h5>Get in touch</h5>
+                        <a href="#">About us</a>
+                        <a href="#">Feature</a>
+                        <div class="socialicons">
+                            <a href=""><i class="fa-brands fa-instagram iconcolor"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f iconcolor"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter iconcolor"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+               
+            </footer>
         </section>
-    </footer>
 </body>
 
 </html>

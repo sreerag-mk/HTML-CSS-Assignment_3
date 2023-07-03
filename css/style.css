@@ -74,7 +74,6 @@
     width: 100%;
     display: flex;
     position: relative;
-
 }
 
 #bannertext {
@@ -197,7 +196,6 @@
     width: 80%;
     height: 50%;
     display: flex;
-
 }
 
 .infodetail {
@@ -216,7 +214,6 @@
 .headingtext {
     width: 80%;
     height: 100%;
-
 }
 
 .insideheading,
@@ -323,8 +320,6 @@
     justify-content: center;
 }
 
-
-
 .numberdetail h6 {
     margin-bottom: 10%;
     font-size: 2em;
@@ -339,21 +334,17 @@
     border: 2px solid var(--primary-color);
     text-decoration: none;
     color: var(--primary-color);
-
 }
 
 .btnarrow {
     position: relative;
     right: 15px;
     top: 25px;
-
 }
 
 #aboutdetail4 img {
     height: 58px;
     width: 90px;
-
-
 }
 
 .section4 {
@@ -395,7 +386,6 @@
 .featurecontent {
     height: 75%;
     width: 100%;
-
 }
 
 .content {
@@ -416,7 +406,6 @@
     text-align: center;
     height: 50px;
     width: 50px;
-
     background-color: var(--primary-color);
     border-radius: 100px;
     display: flex;
@@ -429,7 +418,6 @@
     height: 80%;
     border-left: 1px solid var(--primary-color);
     margin: 10px;
-
 }
 
 .insidecontentbody {
@@ -445,14 +433,11 @@
     width: 50px;
     display: flex;
     align-items: center;
-
 }
 
 .insidecontentbody p {
-
     max-width: 80%;
     color: var(--primary-color);
-
 }
 
 .section5 {
@@ -519,12 +504,10 @@
     max-width: 200px;
     margin-top: 7%;
     margin-left: 5%;
-
 }
 
 .userid i {
     font-size: 50px;
-
 }
 
 .userid img {
@@ -538,13 +521,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .username h4 {
     color: white;
-
-
 }
 
 .username p {
@@ -568,7 +548,6 @@
     align-items: center;
     position: relative;
     text-align: center;
-
 }
 
 #footer1 h2 {
@@ -609,7 +588,6 @@
     color: white;
     margin-right: 6px;
     background-color: var(--primary-color);
-
 }
 
 #footer2 {
@@ -620,7 +598,6 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-
 }
 
 footer {
@@ -641,7 +618,6 @@ footer {
     height: 200px;
     margin-top: 80px;
     padding-right: 10%;
-
 }
 
 #footerdetail1 h4 {
@@ -658,7 +634,6 @@ footer {
     display: flex;
     gap: 15px;
     flex-direction: column;
-
 }
 
 #footerdetail3 {
@@ -667,7 +642,6 @@ footer {
     display: flex;
     gap: 15px;
     flex-direction: column;
-
 }
 
 #footerdetail4 {
@@ -678,15 +652,12 @@ footer {
     flex-direction: column;
 }
 
-
 #footerdetail5 {
     height: 200px;
     margin-top: 80px;
     display: flex;
     gap: 15px;
     flex-direction: column;
-
-
 }
 
 #footerdetail1 p {
@@ -696,6 +667,40 @@ footer {
 .socialicons {
     display: flex;
     gap: 30px;
+}
+
+
+@media (min-width:300px) and (max-width:1000px){
+    #bannertext{
+        max-height: 200px;
+    }
+    .section1{
+        max-height: 600px;
+    }
+    .section2{
+        max-height: 600px;
+    }
+    .section3{
+        max-height: 600px;
+    }
+    .section4{
+        max-height: 1000px;
+    }
+    .section5{
+        max-height: 750px;
+    }
+    .section6{
+        max-height: 600px;
+    }
+    .nav{
+        max-height: 100px;
+    }
+    #aboutdetail1 h2{
+        font-size: 2em;
+    }
+    #aboutdetail2 p {
+        font-size: 1em;
+    }
 }
 
 @media (min-width:1000px) and (max-width:1200px) {
@@ -748,7 +753,7 @@ footer {
 
     .featureheading h2 {
         max-width: 73%;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .downarrow {
@@ -759,7 +764,7 @@ footer {
     #emptybox {
         width: 15%;
         height: 18%;
-        position: absolute;
+        /* position: absolute; */
         top: 65%;
         left: -2%;
     }
@@ -963,7 +968,15 @@ footer {
     }
 
     #footer1 {
-        height: 70%;
+        height: 100%;
+    }
+
+    #navicons {
+        padding-right: 20px;
+    }
+
+    #navname {
+        padding-left: 20px;
     }
 
     .marginRight {
@@ -1164,7 +1177,6 @@ footer {
         height: 1000px;
     }
 }
-
 @media (min-width:700px) and (max-width:900px) {
     .marginLeft {
         margin-left: 0px;
@@ -1194,7 +1206,7 @@ footer {
     }
 
     #footer1 {
-        height: 70%;
+        height: 95%;
     }
 
     #navicons img {
@@ -1401,6 +1413,19 @@ footer {
         margin-right: 0px;
     }
 
+    #navicons {
+        padding-right: 20px;
+    }
+
+    #aboutdetail4 img {
+        height: 58px;
+        width: 40px;
+    }
+
+    #navname {
+        padding-left: 20px;
+    }
+
     #navicons img {
         margin: 0%;
     }
@@ -1483,11 +1508,15 @@ footer {
     #bannertext h1 {
         padding-top: 15px;
         font-size: 1.3em;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #bannertext p {
         padding-bottom: 20px;
         font-size: .8em;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .section2 {
@@ -1781,8 +1810,6 @@ footer {
         height: 900px;
     }
 
-
-
     .responsive_menu {
         display: flex;
         justify-content: flex-end;
@@ -1791,10 +1818,14 @@ footer {
 
     .menu_icon {
         display: block;
-        background-color: #f1f1f1;
+        background-color: white;
         color: #333;
         padding: 10px;
         cursor: pointer;
+    }
+
+    .nav {
+        max-height: 50px;
     }
 
     .menu_icon i {
@@ -1808,7 +1839,7 @@ footer {
         min-width: 200px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 100;
-        top: 80px;
+        top: 50px;
         padding: 10px;
     }
 
@@ -1951,6 +1982,21 @@ footer {
     .section6 {
         max-height: 550px;
     }
+}
+@media (min-width:500px) and (max-width:700px) {
+    .section5 {
+        height: 690px;
+    }
 
+    .section3 {
+        height: 600px;
+    }
 
+    #about1 {
+        height: 50%;
+    }
+
+    #about2 {
+        height: 40%;
+    }
 }

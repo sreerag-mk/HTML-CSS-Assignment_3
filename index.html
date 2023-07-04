@@ -9,20 +9,20 @@
     <title>HTML_CSS_Assignment_4</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
+
 </head>
 
 <body>
-    <header>
-        <nav class="nav container">
+    <header class="container">
+        <nav class="nav">
             <div class="navdiv marginLeft" id="navname">
                 <p><a href="#">Luxterior</a></p>
             </div>
             <div class="navdiv" id="navoptions">
                 <ul class="navdivul">
-                    <li class="navdivli"><a href="#home">Home</a></li>
-                    <li class="navdivli"><a href="#about">About</a></li>
-                    <li class="navdivli"><a href="#feature">Feature</a></li>
+                    <li class="navdivli "><a href="#home">Home</a></li>
+                    <li class="navdivli "><a href="#about">About</a></li>
+                    <li class="navdivli "><a href="#feature">Feature</a></li>
                     <li class="navdivli"><a href="#contact">Contacts</a></li>
                 </ul>
             </div>
@@ -38,10 +38,10 @@
                         <input type="checkbox" id="close_checkbox" class="close_checkbox">
                         <label for="close_checkbox" class="close_icon">&times;</label>
                         <ul>
-                            <li class="navdivli"><a href="#home">Home</a></li>
-                            <li class="navdivli"><a href="#about">About</a></li>
-                            <li class="navdivli"><a href="#feature">Feature</a></li>
-                            <li class="navdivli"><a href="#contact">Contacts</a></li>
+                            <li class="navdivli slideinup"><a href="#home">Home</a></li>
+                            <li class="navdivli slideinup "><a href="#about">About</a></li>
+                            <li class="navdivli slideinup"><a href="#feature">Feature</a></li>
+                            <li class="navdivli slideinup"><a href="#contact">Contacts</a></li>
                         </ul>
                     </div>
 
@@ -51,15 +51,14 @@
     </header>
     <main>
         <section class="section1 container" id="home">
-            <div class="bannerdiv" id="bannertext">
-                <h1>We help you make modern interior</h1>
-                <p>We will help you to make on elegant and beautiful interior designed by professional interior designer
+            <div class="bannerdiv " id="bannertext">
+                <h1 class="fade">We help you make modern interior</h1>
+                <p class="fade">We will help you to make on elegant and beautiful interior designed by professional interior designer
                 </p>
             </div>
             <div class="bannerdiv" id="bannerimage">
-                <img id="livingroom" src="images/livingroom.jpg" alt="livingroom">
                 <div id="emptybox"></div>
-                <div class="downarrow">
+                <div class="downarrow slideinright">
                     <a href="#"><i class="fa-solid fa-arrow-down iconcolor"></i></a>
                 </div>
             </div>
@@ -202,8 +201,8 @@
             </div>
         </section>
 
-        <section class="section5">
-            <div class="review container" id="reviewheading">
+        <section class="section5 container">
+            <div class="review" id="reviewheading">
                 <div class="reviewsubheading">
                     <h2 class="marginLeft">We our customers are saying</h2>
                 </div>
@@ -245,14 +244,14 @@
     <section class="section6 " id="contact">
         <div class="footer container" id="footer1">
             <h2>Subscribe to get the latest news about us</h2>
-            <p>We recommwnt you to subscribe to our newspaper, enter your email below to get our daily update about
+            <p>We recomment you to subscribe to our newspaper, enter your email below to get our daily update about
                 us.</p>
             <div class="subscribebtn">
                 <input type="email" placeholder="Enter your email">
                 <a href="#">Subscribe</a>
             </div>
         </div>
-        <footer class="">
+        <footer>
             <div class="footer container" id="footer2">
                 <div class="footerdetail marginLeft" id="footerdetail1">
                     <h4>Luxterior</h4>
@@ -275,7 +274,7 @@
                 </div>
                 <div class="footerdetail" id="footerdetail4">
                     <h5>Support</h5>
-                    <a href="#">asdfgh</a>
+                    <a href="#">account</a>
                     <a href="#">Feature</a>
                     <a href="#">News</a>
                     <a href="#">Courses</a>
@@ -286,9 +285,9 @@
                     <a href="#">About us</a>
                     <a href="#">Feature</a>
                     <div class="socialicons">
-                        <a href=""><i class="fa-brands fa-instagram iconcolor"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook-f iconcolor"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter iconcolor"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram iconcolor"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f iconcolor"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter iconcolor"></i></a>
                     </div>
                 </div>
             </div>
@@ -296,5 +295,4 @@
         </footer>
     </section>
 </body>
-
 </html>

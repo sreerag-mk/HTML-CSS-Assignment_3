@@ -178,7 +178,7 @@
     height: 50%;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .headingline {
@@ -378,7 +378,7 @@
 
 .content {
     width: 100%;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
     display: flex;
 }
 
@@ -403,7 +403,7 @@
 }
 
 .numberline {
-    height: 80px;
+    height: 60px;
     border-left: 1px solid var(--primary-color);
     margin: 10px;
 }
@@ -460,7 +460,7 @@
 }
 
 .reviewinsidecontent {
-    padding: 20px 0px;
+    padding: 0px 0px 20px 0px;
     width: 36%;
     background-color: var(--primary-color);
     border-radius: 2px;
@@ -469,7 +469,7 @@
 .reviewinsidecontent i {
     font-size: 90px;
     margin-left: 10%;
-    margin-top: 7%;
+    /* margin-top: 7%; */
 }
 
 .reviewinsidecontent h3 {
@@ -579,11 +579,12 @@
 #footer2 {
     background-color: var(--primary-color);
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 20px 0px;
 }
 
 footer {
@@ -601,7 +602,7 @@ footer {
 }
 
 #footerdetail1 {
-    height: 200px;
+    /* height: 200px; */
     margin-top: 80px;
     padding-right: 10%;
 }
@@ -615,7 +616,7 @@ footer {
 }
 
 #footerdetail2 {
-    height: 200px;
+    /* height: 200px; */
     margin-top: 80px;
     display: flex;
     gap: 15px;
@@ -623,7 +624,7 @@ footer {
 }
 
 #footerdetail3 {
-    height: 200px;
+    /* height: 200px; */
     margin-top: 80px;
     display: flex;
     gap: 15px;
@@ -631,7 +632,7 @@ footer {
 }
 
 #footerdetail4 {
-    height: 200px;
+    /* height: 200px; */
     margin-top: 80px;
     display: flex;
     gap: 15px;
@@ -639,7 +640,7 @@ footer {
 }
 
 #footerdetail5 {
-    height: 200px;
+    /* height: 200px; */
     margin-top: 80px;
     display: flex;
     gap: 15px;
@@ -815,7 +816,7 @@ footer {
 
     #feature2 img {
         width: 80%;
-        height: 100%;
+        /* height: 100%; */
     }
 
     .featureheading {
@@ -926,6 +927,10 @@ footer {
 
     #bannersideline {
         display: none;
+    }
+
+    .numberline{
+        height: 35px;
     }
 
     #livingroom {
@@ -1130,6 +1135,10 @@ footer {
 
     .responsive_menu {
         display: none;
+    }
+
+    .numberline{
+        height: 35px;
     }
 
     .marginRight {
@@ -1386,7 +1395,7 @@ footer {
 
     #footer2 {
         flex-direction: column;
-        height: 1100px;
+        /* height: 1100px; */
     }
 
     .navdivul {
@@ -1460,6 +1469,7 @@ footer {
         height: 10%;
         display: flex;
         justify-content: center;
+        padding: 0px 0px;
     }
 
     .infodetail img {
@@ -1470,7 +1480,6 @@ footer {
     .h1heading {
         max-width: 77%;
         font-size: 1.5em;
-        margin-top: 25px;
     }
 
     .numberdetail p {
@@ -1484,7 +1493,7 @@ footer {
         align-items: center;
         width: 100%;
         height: 90%;
-        padding-top: 20px;
+        padding: 10px 0px;
     }
 
     .headingicon {
@@ -1512,6 +1521,10 @@ footer {
         font-size: .8em;
     }
 
+    .section2 {
+        margin-top: 20px;
+    }
+
     .section3 {
         flex-direction: column;
         align-items: center;
@@ -1530,7 +1543,7 @@ footer {
         padding-right: 20px;
     }
 
-    #aboutdetail1 {
+    /* #aboutdetail1 {
         height: 25%;
     }
 
@@ -1544,7 +1557,7 @@ footer {
 
     #aboutdetail2 {
         height: 25%;
-    }
+    } */
 
     #about1 img {
         width: 250px;
@@ -1561,7 +1574,7 @@ footer {
     .section4 {
         display: flex;
         flex-direction: column;
-        padding: 20px 0px;
+        /* padding: 20px 0px; */
     }
 
     #feature1 {
@@ -1585,12 +1598,17 @@ footer {
         height: 80%;
     }
 
+    .numberline{
+        height: 40px;
+    }
+
     #reviewheading {
         width: 100%;
         height: 10%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding: 0px 0px;
     }
 
     #reviewheading h2 {
@@ -1644,6 +1662,7 @@ footer {
     .featureheading h2 {
         max-width: 100%;
         font-size: 1.5em;
+        padding: 10px 0px;
     }
 
     .insidecontentbody h3 {
@@ -1655,12 +1674,12 @@ footer {
     }
 
     .insidecontentbody {
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
     #feature2 img {
         width: 249px;
-        height: 350px;
+        /* height: 350px; */
     }
 
     .subscribebtn a {
@@ -1672,7 +1691,7 @@ footer {
 
     #footer1 h2 {
         font-size: 1.5em;
-        padding: 15px;
+        /* padding: 15px; */
     }
 
     #footer1 p {
@@ -1683,6 +1702,7 @@ footer {
     #footer1 {
         height: 45%;
         justify-content: normal;
+        padding: 0px 10px 30px 10px;
     }
 
     #aboutdetail1{
@@ -1695,14 +1715,16 @@ footer {
         padding: 10px 0px;
     }
     #aboutdetail4{
-        padding: 10px 0px;
+        padding: 0px;
+        position: relative;
+        bottom: 20px;
     }
     #aboutdetail5{
         padding: 10px 0px;
     }
     #footerdetail2 {
         margin-top: 10px;
-        height: 150px;
+        /* height: 150px; */
         text-align: center;
     }
 
@@ -1715,32 +1737,32 @@ footer {
 
     #footerdetail3 {
         margin-top: 10px;
-        height: 150px;
+        /* height: 150px; */
         text-align: center;
     }
 
     #footerdetail4 {
         margin-top: 10px;
-        height: 180px;
+        /* height: 180px; */
         text-align: center;
     }
 
     #footerdetail1 {
         margin-top: 30px;
-        height: 150px;
+        /* height: 150px; */
         text-align: center;
     }
 
     #footerdetail5 {
         margin-top: 10px;
-        height: 150px;
+        /* height: 150px; */
         text-align: center;
     }
 
     #footer2 {
         justify-content: flex-start;
         gap: 10px;
-        height: 900px;
+        /* height: 900px; */
     }
 
     .responsive_menu {

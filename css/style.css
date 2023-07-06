@@ -357,7 +357,6 @@
 
 #feature2 img {
     width: 80%;
-    padding: 30px;
 }
 
 .featureheading {
@@ -431,7 +430,6 @@
 
 #reviewheading h2 {
     font-size: 40px;
-    max-width: 50%;
 }
 
 .reviewsubheadingarrow {
@@ -639,7 +637,6 @@ footer {
 }
 
 @media (min-width:1000px) and (max-width:1200px) {
-
     #bannertext h1,
     #bannertext p {
         margin-left: 100px;
@@ -696,14 +693,12 @@ footer {
         padding: 20px 0px;
     }
 
-
     #about2 {
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-
 
     #aboutdetail1 {
         display: flex;
@@ -781,6 +776,7 @@ footer {
         width: 100%;
         display: flex;
         align-items: center;
+        padding-top: 35px;
     }
 
     #feature1 {
@@ -966,7 +962,6 @@ footer {
     #feature1 {
         width: 80%;
         justify-content: center;
-        margin-top: 60px;
     }
 
     #feature2 {

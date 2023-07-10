@@ -277,9 +277,9 @@
     width: 100%;
 }
 .featureheading h2 {
-    max-width: 70%;
+    max-width: 80%;
     font-size: 2em;
-    padding: 30px 0px;
+    padding: 20px 0px 0px 20px;
 }
 .featurecontent {
     counter-reset: count;
@@ -444,7 +444,7 @@
     justify-content: space-between;
     align-items: baseline;
     color: white;
-    padding: 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 footer {
     background-color: var(--primary-color);
@@ -623,8 +623,8 @@ footer {
         padding-right: 20px;
     }
     #aboutdetail4 img {
-        height: 58px;
-        width: 40px;
+        height: 60px;
+        width: px;
     }
     #navname {
         padding-left: 20px;
@@ -727,9 +727,7 @@ footer {
         justify-content: center;
     }
     #about2 {
-        width: 90%;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 85%;
     }
     #about1 img {
         width: 250px;
@@ -753,7 +751,7 @@ footer {
     }
     #reviewheading h2 {
         font-size: 1.5em;
-        padding: 15px 35px;
+        padding: 15px 25px;
         max-width: 100%;
     }
     #reviewcontent {
@@ -841,7 +839,7 @@ footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 44px 30px;
-        padding: 50px 0px;
+        padding: 20px;
     }
     .responsive_menu {
         display: flex;

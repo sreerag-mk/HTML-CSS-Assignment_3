@@ -4,7 +4,6 @@
     box-sizing: border-box;
     user-select: none;
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -943,6 +942,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    #about2{
+        width: 80%;
+    }
     #aboutdetail1{
         padding: 20px 0px;
     }
@@ -1173,6 +1175,7 @@ footer {
 
     #about2{
         padding: 20px 0px;
+        width: 80% ;
     }
     #aboutdetail2{
         padding: 20px 0px;
@@ -1465,7 +1468,7 @@ footer {
     }
 
     #feature1 {
-        width: 80%;
+        width: 85%;
         justify-content: center;
     }
 
@@ -1496,6 +1499,7 @@ footer {
 
     #reviewheading h2 {
         font-size: 1.5em;
+        padding: 15px 35px;
         max-width: 100%;
     }
 
@@ -1662,23 +1666,10 @@ footer {
     .dropdown_items li {
         padding: 5px 0;
     }
-
-    .close_icon {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        cursor: pointer;
-    }
-
     .menu_checkbox:checked~.dropdown_items {
         display: block;
     }
-    .menu_checkbox,
-    .close_checkbox {
-        visibility: hidden;
-    }
-
-    .close_icon {
+    .menu_checkbox{
         visibility: hidden;
     }
 }

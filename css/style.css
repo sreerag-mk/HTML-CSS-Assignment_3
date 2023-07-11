@@ -4,6 +4,7 @@
     box-sizing: border-box;
     user-select: none;
     scroll-behavior: smooth;
+    border-radius: 2px;
 }
 :root {
     --primary-color: #5a6e79;
@@ -34,12 +35,12 @@
 .marginRight {
     margin-right: 135px;
 }
-.navdivul {
+.navcontentul {
     list-style-type: none;
     display: flex;
     gap: 50px;
 }
-.navdivli a,
+.navcontentli a,
 #navname a {
     text-decoration: none;
     color: black;
@@ -129,7 +130,7 @@
     border-left: 2px solid var(--primary-color);
     height: 50px;
 }
-.section2 {
+.benifit {
     margin-top: 20px;
 }
 .heading {
@@ -182,12 +183,12 @@
 .truckicon img {
     width: 100px;
 }
-.section3 {
+.mainabout {
     width: 100%;
     display: flex;
 }
 #about1 {
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
 }
@@ -251,7 +252,7 @@
     height: 58px;
     width: 90px;
 }
-.section4 {
+.mainfeature {
     padding: 40px 0px;
     width: 100%;
     display: flex;
@@ -268,7 +269,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 #feature2 img {
     width: 70%;
@@ -340,7 +341,6 @@
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .reviewinsidecontent {
     padding: 0px 0px 20px 0px;
@@ -520,28 +520,21 @@ footer {
         font-size: 2em;
     }
     #emptybox {
-        display: none;
-    }
-    .downarrow {
-        display: none;
+        width: 12%;
+        height: 19%;
     }
     #bannersideline {
-        display: none;
+        right: -5%;
     }
     #bannertext {
-        position: static;
-        width: 100%;
-        right: 0;
-        padding-right: 0;
-        align-items: center;
+        right: 55%;
+        top: 20%;
     }
     #bannerimage {
-        width: 100%;
+        height: 350px;
     }
-    #bannertext h1,
-    #bannertext p {
-        max-width: 500px;
-        text-align: center;
+    #bannertext h1{
+        font-size: 1.5em;
     }
     .heading {
         justify-content: center;
@@ -566,7 +559,7 @@ footer {
     .insideheading h3 {
         font-size: 1.3em;
     }
-    .section3{
+    .mainabout{
         flex-direction: column;
         align-items: center;
     }
@@ -580,7 +573,7 @@ footer {
     #aboutdetail2{
         padding: 20px 0px;
     }   
-    .section4 {
+    .mainfeature {
         flex-direction: column;
     }
     #feature1 {
@@ -595,6 +588,7 @@ footer {
     }
     #reviewcontent {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
     .userid {
@@ -604,6 +598,7 @@ footer {
         width: 72%;
     }
     .reviewinsidecontent i {
+        font-size: 60px;
         margin-top: 4%;
     }
     .reviewinsidecontent p {
@@ -661,13 +656,16 @@ footer {
     }
     #bannertext {
         width: 100%;
-        right: 0;
+        max-height: 150px;
+        position: static;
         align-items: center;
         padding-right: 0;
     }
     #bannerimage {
         position: static;
         width: 100%;
+        display: flex;
+        align-items: end;
     }
     #bannertext h1,
     #bannertext p {
@@ -719,7 +717,7 @@ footer {
     .insidedetail p {
         font-size: .8em;
     }
-    .section3 {
+    .mainabout {
         flex-direction: column;
         align-items: center;
     }
@@ -738,7 +736,7 @@ footer {
     #aboutdetail2 p {
         font-size: .8em;
     }
-    .section4 {
+    .mainfeature {
         flex-direction: column;
         padding: 0;
     }
@@ -756,6 +754,7 @@ footer {
     }
     #reviewcontent {
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
     .userid {
@@ -767,6 +766,7 @@ footer {
         width: 72%;
     }
     .reviewinsidecontent i {
+        font-size: 40px;
         margin-top: 4%;
     }
     .reviewinsidecontent p {
@@ -833,6 +833,16 @@ footer {
     }
     #footerdetail5 {
         margin-top: 10px;
+    }
+    #footerdetail1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-right: 0;
+    }
+    #footerdetail1 p{
+        max-width: none;
     }
     #footer2 {
         flex-direction: initial;

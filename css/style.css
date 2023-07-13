@@ -5,6 +5,7 @@
     user-select: none;
     scroll-behavior: smooth;
     border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
 }
 :root {
     --primary-color: #5a6e79;
@@ -25,6 +26,10 @@
     padding: 30px 0px;
     max-height: 130px;
     align-items: center;
+}
+.luxterior{
+    font-weight: 500;
+    font-size: 1.1em;
 }
 .responsive_menu {
     display: none;
@@ -54,19 +59,25 @@
     width: 25px;
 }
 #bannertext {
-    width: 500%;
-    background-color: var(--primary-color);
     color: white;
-    position: absolute;
-    top: 25%;
-    right: 70%;
-    padding: 20px 6px;
+    position: relative;
     display: flex;
+    right: 18%;
     flex-direction: column;
-    align-items: end;
-    padding-right: 14%;
     justify-content: center;
     z-index: 4;
+}
+#bannerimage::after{
+    content: "";
+    width: 125%;
+    position: absolute;
+    top: 25%;
+    right: 77%;
+    color: aqua;
+    background-color: var(--primary-color);
+    height: 50%;
+    margin: auto 0;
+    
 }
 #bannertext h1,
 #bannertext p {
@@ -80,19 +91,20 @@
     font-size: 1em;
 }
 #bannerimage {
-    background: url(/images/livingroom.jpg)no-repeat center center/cover;
-    height: 500px;
+    background: url(../images/livingroom.jpg)no-repeat center center/cover;
+    height: 600px;
     max-width: 1000px;
     width: 68%;
     position: relative;
-    margin: auto;
+    float: right;
+    display: flex;
 }
 #emptybox {
-    width: 10%;
+    width: 14%;
     height: 20%;
     border: 2px solid var(--primary-color);
     position: absolute;
-    top: 84%;
+    top: 83%;
     left: -2%;
     z-index: -1;
 }
@@ -130,15 +142,12 @@
     border-left: 2px solid var(--primary-color);
     height: 50px;
 }
-.benifit {
-    margin-top: 20px;
-}
 .heading {
     width: 100%;
     height: 50%;
     display: flex;
     align-items: center;
-    padding: 20px 0px;
+    padding: 60px 0px;
 }
 .headingline {
     width: 6%;
@@ -154,7 +163,7 @@
     width: 80%;
     height: 50%;
     display: flex;
-    padding: 20px;
+    padding: 37px 0px 60px;
 }
 .infodetail {
     height: 100%;
@@ -175,6 +184,7 @@
 .insidedetail p {
     width: 85%;
     line-height: 25px;
+    padding-top: 20px;
 }
 .infodetail img {
     width: 40px;
@@ -186,6 +196,7 @@
 .mainabout {
     width: 100%;
     display: flex;
+    padding: 60px 0px;
 }
 #about1 {
     width: 60%;
@@ -199,6 +210,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
+    line-height: 1.7;
     justify-content: space-evenly;
 }
 .numberdetail h6,
@@ -235,7 +247,7 @@
     justify-content: center;
 }
 .numberdetail h6 {
-    font-size: 2em;
+    font-size: 3em;
 }
 #aboutdetail4 a {
     padding: 2% 5%;
@@ -253,10 +265,10 @@
     width: 90px;
 }
 .mainfeature {
-    padding: 40px 0px;
+    padding: 60px 0px;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 #feature1 {
@@ -267,7 +279,7 @@
 }
 #feature2 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 60%;
 }
@@ -280,11 +292,10 @@
 .featureheading h2 {
     max-width: 80%;
     font-size: 2em;
-    padding: 20px 0px 0px 20px;
 }
 .featurecontent {
     counter-reset: count;
-    padding: 20px;
+    padding: 70px 20px;
     padding-bottom: 0px;
 }
 .time_line{
@@ -330,6 +341,7 @@
 }
 #reviewheading h2 {
     font-size: 40px;
+    max-width: 350px;
 }
 .reviewsubheadingarrow {
     display: flex;
@@ -338,7 +350,7 @@
 }
 #reviewcontent {
     width: 100%;
-    padding: 20px 0px;
+    padding: 60px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -347,6 +359,7 @@
     width: 36%;
     background-color: var(--primary-color);
     border-radius: 2px;
+    padding-right: 20px;
 }
 .reviewinsidecontent i {
     font-size: 90px;
@@ -394,7 +407,7 @@
     margin-left: 0px;
 }
 #footer1 {
-    padding: 20px 0px 40px 0px;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,6 +433,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 5px 10px 18px var(--primary-color);
 }
 .subscribebtn input {
     border: none;
@@ -498,19 +512,68 @@ footer {
     display: flex;
     gap: 30px;
 }
-@media (min-width:700px) and (max-width:1000px) {
+
+@media (min-width:800px) and (max-width:1100px){
+    .marginRight{
+        margin-right: 50px;
+    }
+    .marginLeft{
+        margin-left: 50px;
+    }
+    #bannerimage{
+        height: 430px;
+        width: 75%;
+    }
+    #bannertext{
+        right: 20%;
+    }
+    #bannersideline{
+        right:-4%;
+    }
+    #bannertext h1 {
+        font-size: 1.5em;
+    }
+    .h1heading{
+        max-width: none;
+    }
+    .info{
+        width: 90%;
+    }
+    .truckicon{
+        padding-right: 65px;
+    }
+    .featureheading h2{
+        max-width: 100%;
+    }
+    .featurecontent{
+        padding: 20px 20px 0px;
+        padding-right: 0;
+        width: 350px;
+    }
+    .mainfeature{
+        width: 100%;
+    }
+    #feature2 img{
+        width: 90%;
+    }
+    #about1 img{
+        width: 80%;
+    }
+    .reviewinsidecontent{
+        width: 43%;
+    }
+    .reviewinsidecontent p{
+        padding-right: 20px;
+    }
+
+}
+@media (min-width:600px) and (max-width:800px) {
     .marginLeft{
         margin-left: 0px;
+        padding-left: 15px;
     }
     .marginRight {
         margin-right: 0px;
-    }
-    #footer2 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .nav {
-        padding-left: 15px;
         padding-right: 15px;
     }
     .responsive_menu {
@@ -519,42 +582,55 @@ footer {
     #footer1 h2 {
         font-size: 2em;
     }
-    #emptybox {
-        width: 12%;
-        height: 19%;
+    .downarrow{
+        right: -1%;
     }
     #bannersideline {
-        right: -5%;
+        display: none;
     }
     #bannertext {
-        right: 55%;
-        top: 20%;
+        right: 20%;
     }
     #bannerimage {
-        height: 350px;
+        height: 400px;
+        width: 80%;
+        margin-right: 15px;
     }
     #bannertext h1{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
-    .heading {
-        justify-content: center;
+    #bannertext p{
+        font-size: .8em;
     }
     .h1heading {
         max-width: 77%;
         font-size: 2em;
     }
+    .heading{
+        padding: 7% 0% 2% 0%;
+        padding-left: 15px;
+    }
     .info {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: 98%;
         gap: 20px;
+        padding: 3% 16px 5% 16px;
     }
     .truckicon img {
         position: relative;
         right: 15px;
     }
     .infodetail {
-        width: 45%;
+        width: 100%;
+    }
+    .truckicon{
+        width: 70px;
+    }
+    .headingicon{
+        width: 2%;
+    }
+    .insidedetail{
+        width: 100%;
     }
     .insideheading h3 {
         font-size: 1.3em;
@@ -562,40 +638,65 @@ footer {
     .mainabout{
         flex-direction: column;
         align-items: center;
+        padding: 0% 0px;
     }
     #about1 {
         justify-content: center;
+        width: 50%;
+    }
+    #about1 img{
+        width: 100%;
+        padding-right: 15px;
     }
     #about2{
         padding: 20px 0px;
-        width: 80% ;
+        width: 97% ;
+    }
+    #aboutdetail1 h2{
+        max-width: none;
+    }
+    #aboutdetail4 img{
+        width: 50px;
     }
     #aboutdetail2{
         padding: 20px 0px;
     }   
     .mainfeature {
         flex-direction: column;
+        padding: 3% 0px;
     }
     #feature1 {
-        width: 80%;
+        width: 98%;
+    }
+    .featureheading h2{
+        max-width: 100%;
+    }
+    .featurecontent {
+        padding: 35px 20px;
     }
     #feature2 {
         width: 50%;
         justify-content: center;
+        padding-left: 15px;
+        margin: auto;
     }
-    #reviewheading {
-        justify-content: space-around;
+    #feature2 img{
+        width: 100%;
+    }
+    .reviewsubheadingarrow {
+        width: 12%;
     }
     #reviewcontent {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding: 0px 15px;
     }
     .userid {
         margin-bottom: 2%;
     }
     .reviewinsidecontent {
-        width: 72%;
+        width: 100%;
     }
     .reviewinsidecontent i {
         font-size: 60px;
@@ -606,23 +707,48 @@ footer {
     }    .reviewinsidecontent h3 {
         margin-top: 4%;
     }
+    #footer1{
+        padding: 10% 0px;
+    }
+    #footer2{
+        flex-wrap: wrap;
+    }
+    #footerdetail1{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    #footerdetail1 p{
+        max-width: none;
+    }
+    .footerdetail{
+        padding: 0px 16px 0px 16px;
+        margin-top: 0px;
+    }
 }
-@media (min-width:300px) and (max-width:700px) {
+@media (min-width:300px) and (max-width:600px) {
     .marginLeft {
         margin-left: 0px;
     }
     .marginRight {
         margin-right: 0px;
     }
+    #bannerimage::after{
+        position: absolute;
+        width: 100%;
+        top: initial;
+        right: initial;
+        height: 160px;
+    }
     #navicons {
-        padding-right: 20px;
+        padding-right: 16px;
     }
     #aboutdetail4 img {
         height: 60px;
-        width: px;
+        width: 50px;
     }
     #navname {
-        padding-left: 20px;
+        padding-left: 16px;
     }
     #navicons img {
         margin: 0%;
@@ -642,9 +768,6 @@ footer {
     .reviewsubheadingarrow {
         display: none;
     }
-    #footerdetail1 {
-        text-align: center;
-    }
     #emptybox {
         display: none;
     }
@@ -658,7 +781,6 @@ footer {
         width: 100%;
         max-height: 150px;
         position: static;
-        align-items: center;
         padding-right: 0;
     }
     #bannerimage {
@@ -670,21 +792,21 @@ footer {
     #bannertext h1,
     #bannertext p {
         max-width: 500px;
-        text-align: center;
     }
     #bannertext h1 {
         padding-top: 15px;
         font-size: 1.3em;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 16px; 
+        padding-right: 16px; 
     }
     #bannertext p {
         padding-bottom: 20px;
+        padding-left: 16px; 
+        padding-right: 16px; 
         font-size: .8em;
     }
     .heading {
-        justify-content: center;
-        padding: 0px 0px;
+        padding: 7% 16px 5% 16px;
     }
     .infodetail img {
         width: 30px;
@@ -696,11 +818,12 @@ footer {
     }
     .numberdetail p {
         font-size: .7em;
+        padding-right: 15px;
     }
     .info {
         flex-direction: column;
-        align-items: center;
         width: 100%;
+        padding: 3% 16px 5% 16px;
     }
     .truckicon img {
         width: 60px;
@@ -708,27 +831,40 @@ footer {
         right: 15px;
     }
     .infodetail {
-        width: 80%;
+        width: 100%;
         padding: 10px 0px;
+    }
+    .headingicon{
+        width: 10%;
+    }
+    .headingtext{
+        width: 100%;
     }
     .insideheading h3 {
         font-size: 1.2em;
     }
     .insidedetail p {
         font-size: .8em;
+        width: 95%;
+        line-height: normal;
     }
     .mainabout {
         flex-direction: column;
         align-items: center;
+        padding: 5% 0px 0px 0px;
     }
     #about1 {
         justify-content: center;
+        width: 100%;
+        line-height: normal;
     }
     #about2 {
-        width: 85%;
+        width: 100%;
+        padding-left: 16px; 
+         padding-right: 16px; 
     }
     #about1 img {
-        width: 250px;
+        width: 100%;
     }
     #aboutdetail1 h2 {
         font-size: 1.5em;
@@ -738,32 +874,50 @@ footer {
     }
     .mainfeature {
         flex-direction: column;
-        padding: 0;
+        padding: 5% 0px 0px 0px;
+    }
+    .featurecontent {
+        padding: 20px; 
     }
     #feature1 {
-        width: 85%;
+        width: 100%;
+        padding-left: 16px; 
+        padding-right: 16px; 
+    }
+    #feature2 {
+        width: 100%;
+        justify-content: center;
+    }
+    #feature2 img {
+        width: 100%;
     }
     #reviewheading {
-        justify-content: space-around;
         padding: 0px 0px;
     }
     #reviewheading h2 {
         font-size: 1.5em;
-        padding: 15px 25px;
+        padding: 15px 0px;
+        padding-left: 16px; 
+        padding-right: 16px; 
         max-width: 100%;
     }
     #reviewcontent {
         flex-direction: column;
         align-items: center;
+        padding: 5% 0px 0px 0px;
         gap: 20px;
+    }
+    .reviewinsidecontent i{
+        margin-left: 16px;
     }
     .userid {
         margin-bottom: 2%;
         margin-top: 4%;
         margin-right: 20px;
+        margin-left: 6px;
     }
     .reviewinsidecontent {
-        width: 72%;
+        width: 100%;
     }
     .reviewinsidecontent i {
         font-size: 40px;
@@ -773,17 +927,16 @@ footer {
         margin-top: 4%;
         font-size: .7em;
         margin-right: 20px;
+        margin-left: 16px;
     }
     .reviewinsidecontent h3 {
         margin-top: 4%;
+        margin-left: 16px;
     }
     .featureheading h2 {
         max-width: 100%;
         font-size: 1.5em;
-        padding: 10px 0px;
-    }
-    #feature2 img {
-        width: 249px;
+        padding: 20px 0px 0px 0px;
     }
     .subscribebtn a {
         position: relative;
@@ -796,10 +949,10 @@ footer {
     }
     #footer1 p {
         font-size: 1em;
-        padding: 0px 15px 15px 15px;
     }
     #footer1 {
-        padding: 0px 10px 30px 10px;
+        padding: 5% 16px 15% 16px;
+        text-align: initial;
     }
     #aboutdetail1{
         padding: 10px 0px;
@@ -837,7 +990,6 @@ footer {
     #footerdetail1{
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
         padding-right: 0;
     }
@@ -845,11 +997,11 @@ footer {
         max-width: none;
     }
     #footer2 {
-        flex-direction: initial;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 44px 30px;
-        padding: 20px;
+        padding: 20px 16px;
     }
     .responsive_menu {
         display: flex;
@@ -891,5 +1043,11 @@ footer {
     }
     .menu_checkbox{
         visibility: hidden;
+    }
+    .timeline_content{
+        line-height: normal;
+    }
+    .timeline_content h3{
+        padding-bottom: 10px;
     }
 }

@@ -147,7 +147,7 @@
     height: 50%;
     display: flex;
     align-items: center;
-    padding: 60px 0px;
+    padding: 100px 0px 50px;
 }
 .headingline {
     width: 6%;
@@ -420,8 +420,10 @@
     max-width: 500px;
 }
 #footer1 p {
-    max-width: 400px;
+    max-width: 460px;
     margin-top: 20px;
+    color: var(--primary-color);
+    line-height: 1.4;
 }
 .subscribebtn {
     position: absolute;
@@ -616,6 +618,9 @@ footer {
         gap: 20px;
         padding: 3% 16px 5% 16px;
     }
+    .infodetail img {
+        height: 30px;
+    }
     .truckicon img {
         position: relative;
         right: 15px;
@@ -642,14 +647,22 @@ footer {
     }
     #about1 {
         justify-content: center;
-        width: 50%;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+    #aboutdetail3 {
+        max-width: 430px;
+    }
+    #aboutdetail2 p {
+        max-width: 700px;
     }
     #about1 img{
         width: 100%;
         padding-right: 15px;
     }
     #about2{
-        padding: 20px 0px;
+        padding: 20px 4px;
         width: 97% ;
     }
     #aboutdetail1 h2{
@@ -663,7 +676,7 @@ footer {
     }   
     .mainfeature {
         flex-direction: column;
-        padding: 3% 0px;
+        padding: 5% 0px;
     }
     #feature1 {
         width: 98%;
@@ -675,7 +688,9 @@ footer {
         padding: 35px 20px;
     }
     #feature2 {
-        width: 50%;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
         justify-content: center;
         padding-left: 15px;
         margin: auto;
@@ -694,9 +709,17 @@ footer {
     }
     .userid {
         margin-bottom: 2%;
+        justify-content: initial;
+        margin-left: 10%;
+        margin-top: 6%;
+    }
+    .userid img {
+        margin: 0;
+        margin-right: 10px;
     }
     .reviewinsidecontent {
         width: 100%;
+        padding-left: 0px;
     }
     .reviewinsidecontent i {
         font-size: 60px;
@@ -717,6 +740,7 @@ footer {
         text-align: center;
         display: block;
         width: 100%;
+        padding-right: 16px;
     }
     #footerdetail1 p{
         max-width: none;
@@ -738,7 +762,7 @@ footer {
         width: 100%;
         top: initial;
         right: initial;
-        height: 160px;
+        height: 140px;
     }
     #navicons {
         padding-right: 16px;
@@ -779,7 +803,7 @@ footer {
     }
     #bannertext {
         width: 100%;
-        max-height: 150px;
+        height: 140px;
         position: static;
         padding-right: 0;
     }
@@ -788,6 +812,7 @@ footer {
         width: 100%;
         display: flex;
         align-items: end;
+        height: 500px;
     }
     #bannertext h1,
     #bannertext p {
@@ -806,13 +831,14 @@ footer {
         font-size: .8em;
     }
     .heading {
-        padding: 7% 16px 5% 16px;
+        padding: 7% 16px 2% 16px;
     }
     .infodetail img {
         width: 30px;
         height: 30px;
+
     }
-    .h1heading {
+    .h1heading{
         max-width: 77%;
         font-size: 1.5em;
     }
@@ -847,11 +873,12 @@ footer {
         font-size: .8em;
         width: 95%;
         line-height: normal;
+        padding-top: 10px;
     }
     .mainabout {
         flex-direction: column;
         align-items: center;
-        padding: 5% 0px 0px 0px;
+        padding: 2% 0px 0px 0px;
     }
     #about1 {
         justify-content: center;
@@ -861,7 +888,8 @@ footer {
     #about2 {
         width: 100%;
         padding-left: 16px; 
-         padding-right: 16px; 
+        padding-right: 16px; 
+        line-height: normal;
     }
     #about1 img {
         width: 100%;
@@ -907,6 +935,9 @@ footer {
         padding: 5% 0px 0px 0px;
         gap: 20px;
     }
+    .numberdetail h6 {
+        font-size: 2em;
+    }
     .reviewinsidecontent i{
         margin-left: 16px;
     }
@@ -914,7 +945,12 @@ footer {
         margin-bottom: 2%;
         margin-top: 4%;
         margin-right: 20px;
-        margin-left: 6px;
+        margin-left: 0px;
+        justify-content: initial;
+        gap: 10px;
+    }
+    .username h4 {
+        min-width: 200px;
     }
     .reviewinsidecontent {
         width: 100%;
@@ -925,8 +961,7 @@ footer {
     }
     .reviewinsidecontent p {
         margin-top: 4%;
-        font-size: .7em;
-        margin-right: 20px;
+        font-size: .8em;
         margin-left: 16px;
     }
     .reviewinsidecontent h3 {
@@ -936,7 +971,9 @@ footer {
     .featureheading h2 {
         max-width: 100%;
         font-size: 1.5em;
-        padding: 20px 0px 0px 0px;
+    }
+    .time_line{
+        padding-right: 0;
     }
     .subscribebtn a {
         position: relative;
@@ -948,7 +985,7 @@ footer {
         font-size: 1.5em;
     }
     #footer1 p {
-        font-size: 1em;
+        font-size: .8em;
     }
     #footer1 {
         padding: 5% 16px 15% 16px;
@@ -961,7 +998,7 @@ footer {
         padding: 10px 0px;
     }
     #aboutdetail3{
-        padding: 10px 0px;
+        padding: 0px 0px 10px;
     }
     #aboutdetail4{
         position: relative;
@@ -995,13 +1032,20 @@ footer {
     }
     #footerdetail1 p{
         max-width: none;
+        font-size: .8em;
     }
     #footer2 {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 44px 30px;
+        gap: 20px 30px;
         padding: 20px 16px;
+    }
+    .userid img{
+        margin: 0px 0px 0px 16px;
+    }
+    .username p{
+        margin-left: 0;
     }
     .responsive_menu {
         display: flex;
@@ -1049,5 +1093,10 @@ footer {
     }
     .timeline_content h3{
         padding-bottom: 10px;
+        font-size: 1em;
+        padding-top: 7px;
+    }
+    .timeline_content p{
+        font-size: .8em;
     }
 }

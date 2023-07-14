@@ -390,15 +390,15 @@
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    margin: auto;
+    margin: 0px 10px 0px 10%;
 }
 .username {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .username h4 {
     color: white;
+    width: 200px;
 }
 .username p {
     margin-top: 7%;
@@ -543,6 +543,12 @@ footer {
     }
     .info{
         width: 90%;
+    }
+    .userid img {
+        margin: 0px 10px 0px 20px;
+    }
+    .userid{
+        justify-content: initial;
     }
     .truckicon{
         padding-right: 65px;

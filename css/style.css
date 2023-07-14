@@ -536,7 +536,10 @@ footer {
         font-size: 1.5em;
     }
     .h1heading{
-        max-width: none;
+        max-width: 45%;
+    }
+    #aboutdetail4 img {
+        width: 55px;
     }
     .info{
         width: 90%;

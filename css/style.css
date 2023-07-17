@@ -13,7 +13,7 @@
 .container {
     max-width: 1350px;
     margin: auto;
-    /* padding: 3% 135px !important; */
+    padding: 3% 135px !important;
 }
 .iconcolorprimary {
     color: var(--primary-color);
@@ -34,12 +34,6 @@
 }
 .responsive_menu {
     display: none;
-}
-.marginLeft {
-    margin-left: 135px;
-}
-.marginRight {
-    margin-right: 135px;
 }
 .navcontentul {
     list-style-type: none;
@@ -68,9 +62,12 @@
     justify-content: center;
     z-index: 4;
 }
+#reviewheading .container {
+    padding-bottom: 0px !important;
+}
 #bannerimage::after{
     content: "";
-    width: 125%;
+    width: 140%;
     position: absolute;
     top: 25%;
     right: 77%;
@@ -95,7 +92,7 @@
     background: url(../images/livingroom.jpg)no-repeat center center/cover;
     height: 600px;
     max-width: 1000px;
-    width: 68%;
+    width: 85%;
     position: relative;
     float: right;
     display: flex;
@@ -108,6 +105,10 @@
     top: 83%;
     left: -2%;
     z-index: -1;
+}
+#home{
+    margin: auto;
+
 }
 .downarrow {
     height: 20%;
@@ -161,7 +162,7 @@
     font-size: 2.5em;
 }
 .info {
-    width: 80%;
+    width: 100%;
     height: 50%;
     display: flex;
     padding: 37px 0px 60px;
@@ -336,6 +337,7 @@
 }
 #reviewheading {
     padding: 20px 0px;
+    padding-bottom: 0px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -357,7 +359,7 @@
 }
 .reviewinsidecontent {
     padding: 0px 0px 20px 0px;
-    width: 36%;
+    width: 48%;
     background-color: var(--primary-color);
     border-radius: 2px;
     padding-right: 20px;
@@ -515,13 +517,9 @@ footer {
     display: flex;
     gap: 30px;
 }
-
 @media (min-width:800px) and (max-width:1100px){
-    .marginRight{
-        margin-right: 50px;
-    }
-    .marginLeft{
-        margin-left: 50px;
+    .container {
+        padding: 3% 50px !important;
     }
     #bannerimage{
         height: 430px;
@@ -577,22 +575,24 @@ footer {
     .reviewinsidecontent p{
         padding-right: 20px;
     }
-
 }
 @media (min-width:600px) and (max-width:800px) {
-    .marginLeft{
-        margin-left: 0px;
-        padding-left: 15px;
+    .numberdetail p {
+        max-width: 100px;
     }
-    .marginRight {
-        margin-right: 0px;
-        padding-right: 15px;
+    .container {
+        max-width: 1350px;
+        margin: auto;
+        padding: 3% 16px !important;
     }
     .responsive_menu {
         display: none;
     }
     #footer1 h2 {
         font-size: 2em;
+    }
+    #footer1 p {
+        padding-bottom: 25px;
     }
     .downarrow{
         right: -1%;
@@ -606,7 +606,6 @@ footer {
     #bannerimage {
         height: 400px;
         width: 80%;
-        margin-right: 15px;
     }
     #bannertext h1{
         font-size: 1.2em;
@@ -620,13 +619,12 @@ footer {
     }
     .heading{
         padding: 7% 0% 2% 0%;
-        padding-left: 15px;
     }
     .info {
         flex-direction: column;
         width: 98%;
         gap: 20px;
-        padding: 3% 16px 5% 16px;
+        padding: 2% 0px 0% 0px;
     }
     .infodetail img {
         height: 30px;
@@ -671,11 +669,10 @@ footer {
         height: 100%;
         object-fit: cover;
         object-position: 100% 95%;
-        padding-right: 15px;
     }
     #about2{
-        padding: 20px 4px;
-        width: 97% ;
+        padding: 20px 0px;
+        width: 100% ;
     }
     #aboutdetail1 h2{
         max-width: none;
@@ -703,7 +700,6 @@ footer {
         width: 100%;
         height: 500px;
         justify-content: center;
-        padding-left: 15px;
         margin: auto;
     }
     #feature2 img{
@@ -764,11 +760,8 @@ footer {
     }
 }
 @media (min-width:300px) and (max-width:600px) {
-    .marginLeft {
-        margin-left: 0px;
-    }
-    .marginRight {
-        margin-right: 0px;
+    .container {
+        padding: 3% 16px !important;
     }
     #bannerimage::after{
         position: absolute;
@@ -777,15 +770,12 @@ footer {
         right: initial;
         height: 140px;
     }
-    #navicons {
-        padding-right: 16px;
-    }
     #aboutdetail4 img {
         height: 60px;
         width: 50px;
     }
-    #navname {
-        padding-left: 16px;
+   #footer1 p {
+        padding-bottom: 55px;
     }
     #navicons img {
         margin: 0%;
@@ -844,7 +834,7 @@ footer {
         font-size: .8em;
     }
     .heading {
-        padding: 7% 16px 2% 16px;
+        padding: 7% 0px 2% 0px;
     }
     .infodetail img {
         width: 30px;
@@ -862,7 +852,7 @@ footer {
     .info {
         flex-direction: column;
         width: 100%;
-        padding: 3% 16px 5% 16px;
+        padding: 3% 0px 5% 0px;
     }
     .truckicon img {
         width: 60px;
@@ -898,12 +888,9 @@ footer {
         width: 100%;
         height: 300px;
         line-height: normal;
-        padding: 0px 16px;
     }
     #about2 {
         width: 100%;
-        padding-left: 16px; 
-        padding-right: 16px; 
         line-height: normal;
     }
     #about1 img {
@@ -927,13 +914,10 @@ footer {
     }
     #feature1 {
         width: 100%;
-        padding-left: 16px; 
-        padding-right: 16px; 
     }
     #feature2 {
         width: 100%;
         justify-content: center;
-        padding: 0px 16px;
         height: 300px;
     }
     #feature2 img {
@@ -947,14 +931,12 @@ footer {
     #reviewheading h2 {
         font-size: 1.5em;
         padding: 15px 0px;
-        padding-left: 16px; 
-        padding-right: 16px; 
         max-width: 100%;
     }
     #reviewcontent {
         flex-direction: column;
         align-items: center;
-        padding: 5% 16px 0px 16px;
+        padding: 5% 0px 0px 0px;
         gap: 20px;
     }
     .numberdetail h6 {
@@ -1038,11 +1020,9 @@ footer {
     #footerdetail3 {
         margin-top: 10px;
     }
-
     #footerdetail4 {
         margin-top: 10px;
     }
-
     #footerdetail1 {
         margin-top: 30px;
     }
@@ -1123,5 +1103,11 @@ footer {
     }
     .timeline_content p{
         font-size: .8em;
+    }
+    .home .container{
+        padding: 0px 0px !important;
+    }
+    #footer1 p{
+        padding-bottom: 25px;
     }
 }

@@ -65,13 +65,17 @@
 #reviewheading .container {
     padding-bottom: 0px !important;
 }
+.mainbanner::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 #bannerimage::after{
     content: "";
     width: 140%;
     position: absolute;
     top: 25%;
     right: 77%;
-    color: aqua;
     background-color: var(--primary-color);
     height: 50%;
     margin: auto 0; 
@@ -88,7 +92,7 @@
     font-size: 1em;
 }
 #bannerimage {
-    background: url(../images/livingroom.jpg)no-repeat center center/cover;
+    background: url(../images/livingroom.jpg)no-repeat center center /cover;
     height: 600px;
     max-width: 1000px;
     width: 85%;
@@ -107,7 +111,6 @@
 }
 #home{
     margin: auto;
-
 }
 .downarrow {
     height: 20%;
@@ -148,7 +151,7 @@
     height: 50%;
     display: flex;
     align-items: center;
-    padding: 100px 0px 50px;
+    padding: 0px 0px 50px;
 }
 .headingline {
     width: 6%;
@@ -164,7 +167,7 @@
     width: 100%;
     height: 50%;
     display: flex;
-    padding: 37px 0px 60px;
+    padding: 37px 0px 0px;
 }
 .infodetail {
     height: 100%;
@@ -516,6 +519,9 @@ footer {
     display: flex;
     gap: 30px;
 }
+#footer1 p {
+    padding-bottom: 25px;
+}
 @media (min-width:800px) and (max-width:1100px){
     .container {
         padding: 3% 50px !important;
@@ -768,6 +774,9 @@ footer {
         top: initial;
         right: initial;
         height: 140px;
+    }
+    #footer1 p {
+        padding-bottom: 25px;
     }
     #aboutdetail4 img {
         height: 60px;
@@ -1108,11 +1117,5 @@ footer {
     }
     #footer1 p{
         padding-bottom: 25px;
-    }
-}
-@media (min-width: 600px){
-    .home{
-        overflow: hidden;
-        padding-bottom: 20px;
     }
 }
